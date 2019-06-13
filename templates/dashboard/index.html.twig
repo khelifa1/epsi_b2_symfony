@@ -1,0 +1,26 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Hello DashboardController!{% endblock %}
+
+{% block body %}
+<style>
+    .example-wrapper { margin: 1em auto; max-width: 800px; width: 95%; font: 18px/1.5 sans-serif; }
+    .example-wrapper code { background: #F5F5F5; padding: 2px 6px; }
+</style>
+  
+   <div class="example-wrapper">
+    <h1>Hello {{ app.user.username }} ! </h1>
+
+  <p>
+        <a href="{{path('pokemon_index')}}">Mes Pokémons</a>
+    </p><p>
+        <a href="{{path('sac')}}">Mon Sac</a>
+    </p><p>
+        <a href="">Faire un combat </a>
+    </p><p>
+        <a href="{{path('app_login')}}">Se déconnecter </a>
+  </p>
+
+
+</div>
+{% endblock %}

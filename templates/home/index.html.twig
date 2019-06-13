@@ -1,0 +1,32 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Hello HomeController!{% endblock %}
+
+{% block body %}
+
+<p>
+    <img src="images/salamèche.jpg" alt="Pokémon"
+    height="550px" 
+    width="800px"
+    />
+</p>
+   
+  <style>
+    .example-wrapper { margin: 1em auto; max-width: 800px; width: 95%; font: 18px/1.5 sans-serif; }
+    .example-wrapper code { background: #F5F5F5; padding: 2px 6px; }
+</style>
+
+
+<div class="example-wrapper">
+    <h1>Welcom to Pokémon! ✅</h1>
+
+<script type="text/javascript"></script>
+   
+
+  <p>
+        <a href="{{path('app_login') }}">Se connecter</a>
+    </p><p>
+        <a href="{{path('app_login') }}">S'enregistrer</a>
+    </p>
+</div>
+{% endblock %}
